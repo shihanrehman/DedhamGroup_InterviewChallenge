@@ -1,3 +1,8 @@
+Link to working app App: https://afternoon-harbor-50548.herokuapp.com
+
+Create a content management system for Animals, Species, and Enclsoure.  I've created a simialr email marketing app with a database of influencers for an email marketing outreach challenge.
+
+
 Edit animals
 We have a zoo, and are computerizing our animal tracking system.
 
