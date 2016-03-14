@@ -1,0 +1,2 @@
+module ContenttypesHelper
+end

@@ -1,0 +1,43 @@
+
+<%= simple_form_for @contact do |f| %>
+  <%= f.error_notification %>
+  <div class= 'row'>
+  	<%= f.input :name, label: false, placeholder:'Enter name of animal...' , input_html: {style: 'width:400px; margin-left:auto; margin-right:auto'} %>
+  	<%= f.button :submit, 'Submit' %>
+  </div>
+
+  <div class='row'>
+  	<div class = 'col-sm-6'> 
+      <%= f.association :media, label: false, as: :check_boxes, collection: Medium.all.to_a, label_method: :name  %>
+    </div>
+    <div class = 'col-sm-6'>
+      <%= f.association :contenttypes, label: false, as: :check_boxes, collection: Contenttype.all.to_a, label_method: :name  %>
+  	</div>
+  </div>
+
+  
+ 
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class= 'text-center'>
+    <%= link_to 'Create New Enclosure', new_contenttype_path%>
+  </div>
+<br>
+<div class= "container">
+  <div class= "table-responsive">
+    <table class= "table table-condensed table-hover table-bordered">
+      <thead>
+        <tr>
+          <th>Enclosure</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @contenttypes.each do |contenttype| %>
+          <tr>
+            <td><%= contenttype.name %></td>
+            <td><%= link_to 'Edit', edit_contenttype_path(contenttype) %></td>
+            <td><%= link_to 'Delete', contenttype_path(contenttype), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+<br>
+  
+</div

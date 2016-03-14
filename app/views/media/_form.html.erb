@@ -1,0 +1,5 @@
+<%= simple_form_for @medium do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, label: false, placeholder:'Enter name of species...' , input_html: {maxlength: 100, style: 'width:400px; margin-left:auto; margin-right:auto'} %>
+  <%= f.button :submit, 'Submit' %>
+<% end %>

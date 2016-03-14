@@ -1,0 +1,6 @@
+<%= simple_form_for @contenttype do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, label: false, placeholder:'Enter name of enclosure...' , input_html: {maxlength: 100, style: 'width:400px; margin-left:auto; margin-right:auto'} %>
+  <%= f.button :submit, 'Submit'%>
+ 
+<% end %>
