@@ -3936,3 +3936,17 @@ Processing by ContactsController#index as HTML
   Rendered navigation/_navbar.html.erb (1.4ms)
   Rendered footer/_copyright.html.erb (0.3ms)
 Completed 200 OK in 517ms (Views: 459.8ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/" for ::1 at 2016-03-14 09:47:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (15.6ms)[0m  SELECT "contacts".* FROM "contacts"
+  [1m[36mMedium Load (1.1ms)[0m  [1mSELECT "media".* FROM "media" INNER JOIN "contacts_media" ON "media"."id" = "contacts_media"."medium_id" WHERE "contacts_media"."contact_id" = $1[0m  [["contact_id", 4]]
+  [1m[35mContenttype Load (0.7ms)[0m  SELECT "contenttypes".* FROM "contenttypes" INNER JOIN "contacts_contenttypes" ON "contenttypes"."id" = "contacts_contenttypes"."contenttype_id" WHERE "contacts_contenttypes"."contact_id" = $1  [["contact_id", 4]]
+  [1m[36mMedium Load (0.4ms)[0m  [1mSELECT "media".* FROM "media" INNER JOIN "contacts_media" ON "media"."id" = "contacts_media"."medium_id" WHERE "contacts_media"."contact_id" = $1[0m  [["contact_id", 5]]
+  [1m[35mContenttype Load (0.3ms)[0m  SELECT "contenttypes".* FROM "contenttypes" INNER JOIN "contacts_contenttypes" ON "contenttypes"."id" = "contacts_contenttypes"."contenttype_id" WHERE "contacts_contenttypes"."contact_id" = $1  [["contact_id", 5]]
+  Rendered contacts/index.html.erb within layouts/application (121.0ms)
+  Rendered navigation/_navbar.html.erb (1.2ms)
+  Rendered footer/_copyright.html.erb (0.3ms)
+Completed 200 OK in 752ms (Views: 688.8ms | ActiveRecord: 31.1ms)
