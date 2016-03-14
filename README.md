@@ -1,22 +1,19 @@
-== README
+Edit animals
+We have a zoo, and are computerizing our animal tracking system.
 
-Content Marketing Web Application 
+We need you to create an interface for inputting the animals manually.
 
-visit at https://strategyhack2.herokuapp.com/
+The Challenge
 
-Work in progress...
+Please build a rails app that allows you to add and edit animals in our system.
 
- - A database of influencers categorized by two search filters, industry and medium. 
- - The user inputs a URL into an already saved email template.
- - The URL contains the content the user wants to market.
- - Mass email is sent to the list of targeted influencers.
- - The user can access and update the list of influencers and the filters directly from the browser.
+It should have the following models
 
-Technology Used:
+Animal
+Enclosure
+Species
+Animals (obviously) are part of species and belong in enclosures
 
-- Ruby on Rails
-- Postgresql
-- Tiwtter Bootstrap
+You should be able to add and edit all of these, including any additional attributes that are necessary (names for the animals for example).
 
-
-
+Furthermore, when creating animals or enclosures, you should be able to do assignment at creation (for example, an animal should be able to be added to an enclosure when you create it, and animals can be moved into a new enclosure at creation)
